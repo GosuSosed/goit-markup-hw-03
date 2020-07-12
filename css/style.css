@@ -235,6 +235,9 @@ h1,h2,h3,h4,h5,h6 {
 .team-list {
     display: flex;
 }
+.team-list-person {
+    width: 270px;
+}
 .team-list-person:not(:last-child) {
     margin-right: 30px;
 }
