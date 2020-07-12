@@ -373,7 +373,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* разметка страницы портфолио */
+.portfolio .container {
+   padding-top: 95px;
+   padding-bottom: 95px;
+}
 .filters {
+    margin-bottom: 35px;
+}
+.filters-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filters-list-item:not(:last-child) {
+margin-right: 10px;
+}
+.filters-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -381,8 +396,8 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--team-bg-color);
     color: var(--main-text-color);
 }
-.filters:hover,
-.filters:hover {
+.filters-name:hover,
+.filters-name:hover {
     background-color: var(--accent-text-color);
     color: var(--main-bg-color);
 }
@@ -390,12 +405,30 @@ h1,h2,h3,h4,h5,h6 {
 .project:focus {
   background-color: var(--portfolio-accent-color);
 }
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-list-item {
+    width: 370px;
+    border: 1px solid #EEEEEE;
+}
+.projects-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.projects-list-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+}
+.project-img {
+    margin-bottom: 20px;
+}
 .project-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-text-color);
+    margin-bottom: 5px;
 }
 .project-kind {
     font-weight: 400;
