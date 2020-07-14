@@ -63,6 +63,9 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: auto;
 }
 /* хедер */
+.header {
+    border: 1px solid #ECECEC;
+}
 .header .container {
     display: flex;
     align-items: center;
@@ -137,7 +140,7 @@ h1,h2,h3,h4,h5,h6 {
 .hero {
     background-image: url(../images/Header-img.jpg);
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 .hero-title {
     font-weight: 900;
@@ -153,9 +156,11 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: auto;
 }
 .button-main-top {
+    width: 200px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.88;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -163,6 +168,7 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--accent-text-color);
     margin-right: auto;
     margin-left: auto;
+    border-radius: 4px;
 }
 .section {
     padding-top: 94px;
@@ -219,7 +225,8 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     background-color: rgba(47, 48, 58, 0.8);
     color: var(--main-bg-color);
-    margin-top: -50px;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 .team-bgc {
     background-color: var(--team-bg-color);
@@ -237,6 +244,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .team-list-person {
     width: 270px;
+    background-color: var(--main-bg-color);
 }
 .team-list-person:not(:last-child) {
     margin-right: 30px;
@@ -261,21 +269,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 .team-social-list {
     display: flex;
+    width: 206px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+    padding-left: 32px;
 }
 .team-social-list-item:not(:last-child) {
     margin-right: 10px;
+}
+.team-link {
+    width: 44px;
+    height: 44px;
+}
+.team-link:hover,
+.team-link:focus {
+    color: var(--accent-text-color);
 }
 .clients {
     text-align: center;
 }
 .clients-title {
     margin-bottom: 50px;
-}
-.team-link:hover,
-.team-link:focus {
-    width: 44px;
-    height: 44px;
-    color: var(--accent-text-color);
 }
 .clients-link {
     display: flex;
@@ -335,9 +349,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 .join-us-list {
     display: flex;
+    width: 206px;
 }
 .join-us-list-item:not(:last-child) {
     margin-right: 10px;
+}
+.social-link {
+    width: 44px;
+    height: 44px;
+}
+.social-link:hover,
+.social-link:focus {
+    color: var(--accent-text-color);
 }
 .action {
     font-weight: 700;
@@ -358,12 +381,6 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--main-bg-color);
     background-color: var(--accent-text-color);
     display: flex;
-}
-.social-link:hover,
-.social-link:focus {
-    width: 44px;
-    height: 44px;
-    color: var(--accent-text-color);
 }
 .follow {
     display: flex;
@@ -395,9 +412,15 @@ margin-right: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    align-items: center;
     text-align: center;
     background-color: var(--team-bg-color);
     color: var(--main-text-color);
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
 }
 .filters-name:hover,
 .filters-name:hover {
@@ -431,6 +454,8 @@ margin-right: 10px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-text-color);
+    padding-left: 22px;
+    padding-right: 22px;
     margin-bottom: 5px;
 }
 .project-kind {
@@ -438,10 +463,14 @@ margin-right: 10px;
     font-size: 16px;
     line-height: 1.9;
     color: var(--secondary-text-color);
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 20px;
 }
 .description {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     /* color: var(--main-bg-color); */
+    display: none;
 }
