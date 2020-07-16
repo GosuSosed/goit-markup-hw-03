@@ -214,6 +214,9 @@ h1,h2,h3,h4,h5,h6 {
 .we-do-list {
     display: flex;
 }
+.we-do-list-item {
+    position: relative;
+}
 .we-do-list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -227,6 +230,10 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--main-bg-color);
     padding-top: 27px;
     padding-bottom: 27px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 .team-bgc {
     background-color: var(--team-bg-color);
@@ -269,10 +276,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 .team-social-list {
     display: flex;
-    width: 206px;
-    padding-right: 32px;
-    padding-bottom: 24px;
+    justify-content: center;
     padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 24px;    
 }
 .team-social-list-item:not(:last-child) {
     margin-right: 10px;
@@ -318,11 +325,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 .footer .container {
     display: flex;
+    align-items: baseline;
     padding-top: 70px;
     padding-bottom: 100px;
 }
 .adress-bot {
-    margin-right: 70px;
+    margin-right: 69px;
 }
 .footer .logo-name {
     color: var(--main-bg-color);
@@ -349,7 +357,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .join-us-list {
     display: flex;
-    width: 206px;
+    justify-content: center;
 }
 .join-us-list-item:not(:last-child) {
     margin-right: 10px;
@@ -438,6 +446,7 @@ margin-right: 10px;
 .projects-list-item {
     width: 370px;
     border: 1px solid #EEEEEE;
+    overflow: auto;
 }
 .projects-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -454,8 +463,8 @@ margin-right: 10px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-text-color);
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-bottom: 5px;
 }
 .project-kind {
@@ -463,8 +472,8 @@ margin-right: 10px;
     font-size: 16px;
     line-height: 1.9;
     color: var(--secondary-text-color);
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 20px;
 }
 .description {
