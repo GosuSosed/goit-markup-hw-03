@@ -446,7 +446,6 @@ margin-right: 10px;
 .projects-list-item {
     width: 370px;
     border: 1px solid #EEEEEE;
-    overflow: auto;
 }
 .projects-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
